@@ -51,7 +51,7 @@ export default function Navbar(
                                             <div className='flex items-end space-x-1'>
                                                 <span>{item.item}</span><div className='nav-icon pb-[1px]'><ChevronDown /></div>
                                             </div>
-                                            <div className='nav-submenu absolute top-5 left-6 whitespace-nowrap bg-white border'>
+                                            <div className='nav-submenu absolute top-5 -left-6 whitespace-nowrap bg-white border'>
                                                 <ul >
                                                     {
                                                         item.subMenu.map((subItem) => (
