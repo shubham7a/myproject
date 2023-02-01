@@ -1,0 +1,60 @@
+.nav-menu {
+  cursor: pointer;
+}
+.nav-submenu {
+  display: none;
+}
+.nav-menu:hover > .nav-submenu {
+  display: block;
+  animation: submenu 200ms normal ease-in;
+  z-index: 10;
+}
+
+.nav-subcategory {
+  display: none;
+}
+
+.nav-category:hover > .nav-subcategory {
+  display: block;
+  animation: subcategory 200ms normal ease-in;
+  z-index: 10;
+}
+
+.nav-subcategory:hover {
+  display: block;
+}
+
+.nav-submenu:hover {
+  display: block;
+}
+
+.nav-icon{
+  transform: rotate(0deg);
+}
+
+.nav-menu:hover > * > .nav-icon {
+  transform: rotate(180deg);
+  transition: transform 0.2s ease-in-out
+}
+
+@keyframes submenu {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes subcategory {
+  0% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
